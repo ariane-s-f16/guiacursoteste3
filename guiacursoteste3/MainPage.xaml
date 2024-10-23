@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="guiacursoteste3.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+
+
+                <Frame Grid.Row="0" 
+                    BackgroundColor="Gray"
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    HasShadow="True"
+                    Padding="10"
+                    Margin="5"   >
+                    <StackLayout>
+                        <Label Text="DESENVOLVIMENTO DE SISTEMAS" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
+                        <Image Source="logo1d.png" WidthRequest="350" 
+                               HeightRequest="150"   />
+                        <Label Text="Descrição do Card" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" 
+                    BackgroundColor="Gray"
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    HasShadow="True"
+                    Padding="10"
+                    Margin="5">
+                    <StackLayout>
+                        <Label Text="EDIFICAÇÕES" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT"/>
+                        <Image Source="logo5e.png" WidthRequest="350" 
+                               HeightRequest="150" 
+                               Aspect="AspectFit" />
+                        <Label Text="Descrição do Card" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Row="2" 
+                    BackgroundColor="Gray"
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    HasShadow="True"
+                    Padding="10"
+                    Margin="5">
+                    <StackLayout>
+                        <Label Text="ADMISTRAÇÃO" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
+                        <Image Source="logo3a.png" WidthRequest="350" 
+                               HeightRequest="150" />
+                        <Label Text="jucvjuihvduvhfdvhfkvjhufuvihufehavuihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhr
+                               jrufddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                               rhfdikjjjjjjjjjjjjjjjjjjjj
+                               rhjdddddddd"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Row="3" 
+                    BackgroundColor="Gray"
+                    BorderColor="Black"
+                    CornerRadius="10"
+                    HasShadow="True"
+                    Padding="10"
+                    Margin="5"   >
+                    <StackLayout>
+                        <Label Text="MECATRÔNICA" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
+                        <Image Source="logo4m.png" WidthRequest="350" 
+                               HeightRequest="150"  />
+                        <Label Text="Descrição do Card"/>
+                    </StackLayout>
+                </Frame>
+
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
