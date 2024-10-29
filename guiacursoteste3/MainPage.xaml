@@ -23,12 +23,16 @@
                     CornerRadius="10"
                     HasShadow="True"
                     Padding="10"
-                    Margin="5"   >
+                    Margin="5" 
+                    Scale="1" 
+                    x:Name="Card1">
                     <StackLayout>
                         <Label Text="DESENVOLVIMENTO DE SISTEMAS" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
-                        <Image Source="logo1d.png" WidthRequest="350" 
+                        <Image Source="l1.png" WidthRequest="350" 
                                HeightRequest="150"   />
-                        <Label Text="Descrição do Card" />
+                        <Label Text="Descrição do Card" FontSize="Micro"  FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+                        <Image Source="tds.png" WidthRequest="20" 
+                               HeightRequest="20"  />
                     </StackLayout>
                 </Frame>
 
@@ -36,15 +40,19 @@
                     BackgroundColor="Gray"
                     BorderColor="Black"
                     CornerRadius="10"
-                    HasShadow="True"
                     Padding="10"
-                    Margin="5">
-                    <StackLayout>
-                        <Label Text="EDIFICAÇÕES" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT"/>
-                        <Image Source="logo5e.png" WidthRequest="350" 
+                    Margin="5"
+                    HasShadow="True" 
+                    Scale="1" 
+                    x:Name="Card2">     
+                    <StackLayout Orientation="15">
+                        <Label Text="EDIFICAÇÕES"  HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT"/>
+                        <Image Source="l2.png" WidthRequest="350" 
                                HeightRequest="150" 
                                Aspect="AspectFit" />
-                        <Label Text="Descrição do Card" />
+                        <Label Text="Descrição do Card" FontSize="Micro" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+                        <Image Source="tds.png" WidthRequest="20" 
+                               HeightRequest="20"  />
                     </StackLayout>
                 </Frame>
 
@@ -52,17 +60,18 @@
                     BackgroundColor="Gray"
                     BorderColor="Black"
                     CornerRadius="10"
-                    HasShadow="True"
                     Padding="10"
-                    Margin="5">
-                    <StackLayout>
-                        <Label Text="ADMISTRAÇÃO" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
-                        <Image Source="logo3a.png" WidthRequest="350" 
+                    Margin="5"
+                    HasShadow="True" 
+                    Scale="1" 
+                    x:Name="Card3">
+                    <StackLayout Spacing="15">
+                        <Label Text="ADMISTRAÇÃO"  HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
+                        <Image Source="l3.png" WidthRequest="350" 
                                HeightRequest="150" />
-                        <Label Text="jucvjuihvduvhfdvhfkvjhufuvihufehavuihhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhr
-                               jrufddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-                               rhfdikjjjjjjjjjjjjjjjjjjjj
-                               rhjdddddddd"/>
+                        <Label Text="Descrição do Card" FontSize="Micro" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+                        <Image Source="tds.png" WidthRequest="20" 
+                               HeightRequest="20"  />
                     </StackLayout>
                 </Frame>
 
@@ -70,14 +79,19 @@
                     BackgroundColor="Gray"
                     BorderColor="Black"
                     CornerRadius="10"
-                    HasShadow="True"
                     Padding="10"
-                    Margin="5"   >
-                    <StackLayout>
-                        <Label Text="MECATRÔNICA" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
-                        <Image Source="logo4m.png" WidthRequest="350" 
+                    Margin="5" 
+                    HasShadow="True" 
+                    Scale="1" 
+                    x:Name="Card4">
+                    <StackLayout Spacing="15">
+                        <Label Text="MECATRÔNICA"  HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
+                        
+                            <Image Source="l4.png" WidthRequest="350" 
                                HeightRequest="150"  />
-                        <Label Text="Descrição do Card"/>
+                        <Label Text="Descrição do Card" FontSize="Micro" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
+                        <Image Source="tds.png" WidthRequest="20" 
+                               HeightRequest="20"  />
                     </StackLayout>
                 </Frame>
 
