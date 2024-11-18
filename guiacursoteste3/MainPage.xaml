@@ -25,7 +25,13 @@
                     Padding="10"
                     Margin="5" 
                     Scale="1" 
-                    x:Name="Card1">
+                    x:Name="Card1"
+                    GestureRecognizers>
+
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCardTapped" CommandParameter="Card1" />
+                    </Frame.GestureRecognizers>
+                    
                     <StackLayout>
                         <Label Text="DESENVOLVIMENTO DE SISTEMAS" FontAttributes="Italic" HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT" />
                         <Image Source="l1.png" WidthRequest="350" 
@@ -44,12 +50,17 @@
                     Margin="5"
                     HasShadow="True" 
                     Scale="1" 
-                    x:Name="Card2">     
+                    x:Name="Card2"
+                    GestureRecognizers>
+                    
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCardTapped" CommandParameter="Card2" />
+                    </Frame.GestureRecognizers>
+                    
                     <StackLayout Orientation="15">
                         <Label Text="EDIFICAÇÕES"  HorizontalTextAlignment="Center" FontSize="Large" FontFamily="IMPACT"/>
                         <Image Source="l2.png" WidthRequest="350" 
-                               HeightRequest="150" 
-                               Aspect="AspectFit" />
+                               HeightRequest="150" />
                         <Label Text="Descrição do Card" FontSize="Micro" FontAttributes="Italic" HorizontalTextAlignment="Center"/>
                         <Image Source="tds.png" WidthRequest="20" 
                                HeightRequest="20"  />

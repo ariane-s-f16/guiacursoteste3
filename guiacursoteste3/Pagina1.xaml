@@ -3,10 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="guiacursoteste3.Pagina1"
              Title="Pagina1">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <StackLayout>
+        <Label Text="Bem-vindo à Pag1!" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
 </ContentPage>

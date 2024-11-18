@@ -1,4 +1,7 @@
-﻿namespace guiacursoteste3
+﻿using UIKit;
+using WebKit;
+
+namespace guiacursoteste3
 {
     public partial class MainPage : ContentPage
     {
@@ -7,28 +10,32 @@
         {
             InitializeComponent();
         }
-        private async void OnCardTapped(object sender, EventArgs e)
+        private async void OnCardTapped(object sender, System.EventArgs e)
         {
-            if (sender is Frame frame)
-            {
-                await frame.ScaleTo(1.1, 100);
-                await frame.ScaleTo(1.0, 100);
+            var gestureRecognizer = sender as TapGestureRecognizer;
+            var cardName = gestureRecognizer?.CommandParameter.ToString(); 
+            // Pega o nome do card clicado (Card1, Card2, etc)
 
-                switch (frame)
-                {
-                    case var f when f == Card1:
-                        await Navigation.PushAsync(new Pagina1());
-                        break;
-                    case var f when f == Card2:
-                        await Navigation.PushAsync(new Pagina2());
-                        break;
-                    case var f when f == Card3:
-                        await Navigation.PushAsync(new Pagina3());
-                        break;
-                    case var f when f == Card4:
-                        await Navigation.PushAsync(new Pagina4());
-                        break;
-                }
+            // Verifique qual card foi clicado e navegue para a página desejada
+            if (cardName == "Card1")
+            {
+                // Exemplo: navegar para a página Pag1
+                await Navigation.PushAsync(new Pagina1());
+            }
+            else if (cardName == "Card2")
+            {
+                // Navegar para outra página, se necessário
+                await Navigation.PushAsync(new Pagina2());
+            }
+            else if (cardName == "Card3")
+            {
+                // Navegar para outra página, se necessário
+                await Navigation.PushAsync(new Pagina3());
+            }
+            else if (cardName == "Card4")
+            {
+                // Navegar para outra página, se necessário
+                await Navigation.PushAsync(new Pagina3());
             }
         }
 
